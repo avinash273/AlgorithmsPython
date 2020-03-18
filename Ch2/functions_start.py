@@ -8,10 +8,12 @@ def fun1():
     return 0;
 
 # function that takes arguments
-
+def fun2(arg1, arg2):
+    print(arg1, " ", arg2)
 
 # function that returns a value
-
+def cube(x):
+    return x*x*x;
 
 # function with default value for an argument
 
@@ -21,3 +23,5 @@ def fun1():
 fun1()
 print(fun1())
 print(fun1)
+fun2(2,20)
+print(fun2)
