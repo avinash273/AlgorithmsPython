@@ -22,7 +22,9 @@ def main():
  
   # use the break and continue statements
   for x in range(5,10):
-    if(x==7): break
+    #if(x==7): break
+    if(x%2 == 0): continue
+    #continue just means that, you need to continue and do nothing is the value is satisfied
     print(x)
 
   #using the enumerate() function to get index 
