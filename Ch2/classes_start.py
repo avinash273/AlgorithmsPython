@@ -15,7 +15,7 @@ class anotherClass(myClass):
 
   def method2(self,someString):
     myClass.method2(self,"Dummy value")
-    print("anotherClass Method2 " + someString )
+    print("anotherClass Method2 " + someString)
 
 def main():
   c = myClass()
