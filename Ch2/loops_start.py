@@ -28,7 +28,10 @@ def main():
     print(x)
 
   #using the enumerate() function to get index 
+  days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
 
+  for i,x in enumerate(days):
+    print(i,",All Days: ",x)
 
 if __name__ == "__main__":
   main()
