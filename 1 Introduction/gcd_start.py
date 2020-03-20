@@ -19,7 +19,7 @@ def gcd(a, b):
         
 # try out the function with a few examples
 print("While ", gcd(60, 96))  # should be 12
-print("While ",gcd(20, 8))   # should be 4
+print("While ",gcd(8, 20))   # should be 4
 
 print("Recursive ",gcdRecursive(60, 96))  # should be 12
-print("Recursive ",gcdRecursive(20, 8))   # should be 4
+print("Recursive ",gcdRecursive(8, 20))   # should be 4
