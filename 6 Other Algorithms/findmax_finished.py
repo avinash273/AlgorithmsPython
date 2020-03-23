@@ -4,6 +4,13 @@
 # declare a list of values to operate on
 items = [6, 20, 8, 19, 56, 23, 87, 41, 49, 53]
 
+def find_max_non_recur(items):
+    max = items[0]
+    for x in items:
+        if(max < x):
+            max = x
+    return max
+
 def find_max(items):
     # breaking condition: last item in list? return it
     if len(items) == 1:
@@ -25,3 +32,5 @@ def find_max(items):
 
 # test the function
 print(find_max(items))
+
+print("Avi Max: ", find_max_non_recur(items))
