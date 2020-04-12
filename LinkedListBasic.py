@@ -72,7 +72,6 @@ class linked_list:
         else:
             while cur.next is not None:
                 cur = cur.next
-                cur2 = cur
                 count += 1
                 if(count == index):
                     ins_node.next = cur.next

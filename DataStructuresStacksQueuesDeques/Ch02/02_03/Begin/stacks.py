@@ -4,16 +4,57 @@ class Stack:
         self.items = []
 
     def push(self, item):
-        pass
+        """
+        Works in constant time O(1) complexity
+        """
+        self.items.append(item)
 
     def pop(self):
-        pass
+        """
+        Removes the last item, which is O(1) time operation
+        """
+        if self.items:
+            return self.items.pop()
+        else:
+            return None
 
     def peek(self):
-        pass
+        """
+        This will return the item at top
+        O(1) time operation
+        :return:
+        """
+        if self.items:
+            return self.items[-1]
+        else:
+            return ""
 
     def size(self):
-        pass
+        """
+        runs in O(1) is constant time operation
+        :return:
+        """
+        if self.items:
+            return len(self.items)
+        else:
+            return ""
 
     def is_empty(self):
         pass
+
+Stack = Stack()
+Stack.push(1)
+Stack.push(2)
+Stack.push(3)
+Stack.push(4)
+Stack.push(5)
+Stack.push(6)
+
+print("Items: ",Stack.items)
+
+print("Peek ",Stack.peek())
+print("Size ",Stack.size())
+print("pop ",Stack.pop())
+print("After pop ", Stack.items)
+print("Size ",Stack.size())
+
