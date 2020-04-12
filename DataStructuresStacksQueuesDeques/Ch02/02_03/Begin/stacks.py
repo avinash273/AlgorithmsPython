@@ -40,21 +40,27 @@ class Stack:
             return ""
 
     def is_empty(self):
-        pass
+        if self.items:
+            return False
+        else:
+            return True
+
 
 Stack = Stack()
+print("Is empty", Stack.is_empty())
 Stack.push(1)
 Stack.push(2)
 Stack.push(3)
 Stack.push(4)
 Stack.push(5)
 Stack.push(6)
+print("Is empty", Stack.is_empty())
+print("Items: ", Stack.items)
 
-print("Items: ",Stack.items)
-
-print("Peek ",Stack.peek())
-print("Size ",Stack.size())
-print("pop ",Stack.pop())
+print("Peek ", Stack.peek())
+print("Size ", Stack.size())
+print("pop ", Stack.pop())
 print("After pop ", Stack.items)
-print("Size ",Stack.size())
+print("Size ", Stack.size())
 
+print("Size ", Stack.size())
