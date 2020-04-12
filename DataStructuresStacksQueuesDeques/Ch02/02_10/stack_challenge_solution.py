@@ -14,40 +14,27 @@ class Stack:
 
 
 def match_symbols(symbol_str):
+    symbols = {'(': ')', '{': '}', '[': ']'}
+    size = len(symbol_str)
+    symbolStack = []
+    i = 0
+    if size == 0:
+        return False
+    else:
+        while i < size:
+            if symbol_str[i] in symbols:
+                symbolStack.append(symbols[symbol_str[i]])
+                print("L:", symbol_str[i])
+                print("R:", symbols[symbol_str[i]])
+            elif symbolStack[-1] == symbol_str[i]:
+                print("Pop: ", symbolStack.pop())
+            i += 1
 
-    symbol_pairs = {
-        '(': ')',
-        '[': ']',
-        '{': '}',
-    }
-
-    openers = symbol_pairs.keys()
-    my_stack = Stack()
-
-    index = 0
-    while index < len(symbol_str):
-        symbol = symbol_str[index]
-
-        if symbol in openers:
-            my_stack.push(symbol)
-        else:  # The symbol is a closer
-
-            # If the Stack is already empty, the symbols are not balanced
-            if my_stack.is_empty():
-                return False
-
-            # If there are still items in the Stack, check for a mis-match.
-            else:
-                top_item = my_stack.pop()
-                if symbol != symbol_pairs[top_item]:
-                    return False
-
-        index += 1
-
-    if my_stack.is_empty():
+    if (len(symbolStack) == 0):
         return True
+    else:
+        return False
 
-    return False  # Stack is not empty so symbols were not balanced
 
-print(match_symbols('([{}])'))
-print(match_symbols('(([{}]])'))
+print(match_symbols('[([{}])]'))
+print(match_symbols('{(([{}])]}'))
