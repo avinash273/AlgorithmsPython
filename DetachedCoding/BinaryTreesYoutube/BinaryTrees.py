@@ -41,7 +41,7 @@ class BinaryTree(object):
 
     def postorder_print(self, start, traversal):
         """
-        Starts at left->root->right
+        Starts at left->right->root
         """
         if start:
             traversal = self.postorder_print(start.left, traversal)
