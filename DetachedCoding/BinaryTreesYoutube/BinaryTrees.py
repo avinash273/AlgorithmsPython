@@ -58,6 +58,11 @@ tree.root.left.right = Node(5)
 tree.root.right.left = Node(6)
 tree.root.right.right = Node(7)
 
+#              1
+#           /      \
+#          2         3
+#         /  \      /  \
+#        4    5    6     7
 print("pre order: ", tree.print_tree("preorder"))
 print("in order: ", tree.print_tree("inorder"))
 print("post order: ", tree.print_tree("postorder"))
