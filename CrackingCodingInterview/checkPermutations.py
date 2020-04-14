@@ -13,7 +13,6 @@ def check_permutations(str1, str2):
         newone = []
         for perm in list(str1_permut):
             newone.append(''.join(perm))
-        print(newone)
         for each in newone:
             if (contains(each, str2)):
                 return True
@@ -25,13 +24,11 @@ def check_permutations2(str1, str2):
     else:
         sort_str1 = sorted(str1)
         sort_str2 = sorted(str2)
-
-        for each in sort_str1:
-            str1f = "".join(each)
-        for each in sort_str2:
-            str2f = "".join(each)
+        str1f = "".join(sort_str1)
+        str2f = "".join(sort_str2)
 
         if str1f == str2f:
+            print(str1f, str2f)
             return True
         else:
             return False
