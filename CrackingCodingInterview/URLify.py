@@ -10,4 +10,9 @@ def URLify(str1, true_length):
 result = URLify("Hi I am avinash shanker    ",23)
 print(result)
 
+string = "ABC xyz"
+n = len(string)
+a = list(string)
+print(a)
+print("".join(a))
 
