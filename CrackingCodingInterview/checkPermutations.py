@@ -19,7 +19,24 @@ def check_permutations(str1, str2):
                 return True
         return False
 
+def check_permutations2(str1, str2):
+    if len(str1) is not len(str2):
+        return False
+    else:
+        sort_str1 = sorted(str1)
+        sort_str2 = sorted(str2)
 
-print(check_permutations("abc", "cba"))
-# print(permutations_check("avinash", "cat"))
-# print(permutations_check("avi", "avinash"))
+        for each in sort_str1:
+            str1f = "".join(each)
+        for each in sort_str2:
+            str2f = "".join(each)
+
+        if str1f == str2f:
+            return True
+        else:
+            return False
+
+
+print(check_permutations2("abc", "cba"))
+print(check_permutations2("avinash", "cat"))
+print(check_permutations2("nashavi", "avinash"))
