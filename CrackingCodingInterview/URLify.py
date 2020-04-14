@@ -5,9 +5,9 @@ def URLify(str1, true_length):
             fin_str.append('%20')
         else:
             fin_str.append(str1[i])
-    return fin_str
+    return "".join(fin_str)
 
 result = URLify("Hi I am avinash shanker    ",23)
-result2 =""
-print(result2.join(result))
+print(result)
+
 
