@@ -90,7 +90,7 @@ linked_list1.append(3)
 linked_list1.append(4)
 linked_list1.append(5)
 
-linked_list1.display()
+# linked_list1.display()
 # print("After:", linked_list1.length())
 # print("At index:", linked_list1.get(2))
 
