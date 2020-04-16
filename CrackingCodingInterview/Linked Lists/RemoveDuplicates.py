@@ -25,6 +25,12 @@ class LinkedList:
         print(*listData, sep="->")
 
     def remove_duplicates(self):
+        """
+        complexity:
+        Time: O(n)
+        Space: O(n)
+        :return:
+        """
         hashmap = dict()
         cur = self.head
         while cur.next is not None:
