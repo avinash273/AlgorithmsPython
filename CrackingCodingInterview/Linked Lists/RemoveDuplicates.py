@@ -70,5 +70,5 @@ linked_list1.append(3)
 linked_list1.display()
 
 linked_list1.remove_duplicates()
-print("After")
+print("After") 
 linked_list1.display()
