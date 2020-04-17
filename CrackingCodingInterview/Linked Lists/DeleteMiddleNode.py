@@ -45,6 +45,7 @@ class LinkedList:
             if count == middle:
                 last.next = cur.next
                 cur = last
+        print(cur)
 
 
 linked_list1 = LinkedList()
@@ -57,6 +58,15 @@ linked_list1.append(5)
 linked_list1.append(6)
 linked_list1.append(7)
 linked_list1.append(8)
+linked_list1.append(2)
+linked_list1.append(3)
+linked_list1.append(4)
+linked_list1.append(5)
+linked_list1.append(6)
+linked_list1.append(7)
+linked_list1.append(8)
+
+print(linked_list1)
 
 linked_list1.display()
 
