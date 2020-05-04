@@ -29,7 +29,7 @@ def mergesort(dataset):
             k += 1
 
         while j < len(rightarr):
-            dataset[k] = rightarr[i]
+            dataset[k] = rightarr[j]
             j += 1
             k += 1
 
