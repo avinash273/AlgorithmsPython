@@ -1,6 +1,6 @@
 items = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
-
+# https://www.linkedin.com/learning/programming-foundations-algorithms/unordered-list-search?u=56687537
 def quickSort(dataset, first, last):
     if first < last:
         pivotIdx = partition(dataset, first, last)
