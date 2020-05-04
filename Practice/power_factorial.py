@@ -14,3 +14,4 @@ def factorial(num):
 
 print(power(2, 1))
 print(factorial(5))
+
