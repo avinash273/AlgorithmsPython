@@ -12,3 +12,5 @@ for item in Fruits:
         counter[item] = 1
 
 print(counter)
+
+# https://www.linkedin.com/learning/programming-foundations-design-patterns-2/don-t-reinvent-the-wheel?u=56687537
