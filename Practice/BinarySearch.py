@@ -20,4 +20,5 @@ def BinarySearch(item, dataset):
     if lowerIdx > upperIdx:
         return None
 
+
 print(BinarySearch(10, items))
