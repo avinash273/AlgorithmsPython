@@ -15,3 +15,4 @@ def GCD_Loop(a, b):
 print(GCD_Recursive(20, 8))
 print(GCD_Recursive(60, 96))
 print(GCD_Loop(20, 8))
+print(GCD_Loop(60, 96))
